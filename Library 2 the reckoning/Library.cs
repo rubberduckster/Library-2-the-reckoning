@@ -45,11 +45,11 @@ namespace Library_2_the_reckoning
                     if (book.IsOnLoan)
                     {
                         book.Return();
-                        Console.WriteLine("Book is returned.");
+                        Console.WriteLine($"{book.Title} is returned.");
                     }
                     else
                     {
-                        Console.WriteLine("Book isn't on loan.");
+                        Console.WriteLine($"{book.Title} isn't on loan.");
                     }
 
                     return;

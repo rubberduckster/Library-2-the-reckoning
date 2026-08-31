@@ -36,6 +36,7 @@ namespace Program
             Console.WriteLine("Welcome to the Library!");
             Console.WriteLine("Type 1: Loan book");
             Console.WriteLine("Type 2: Return book");
+            Console.Write("Input: ");
 
             string userInput = Console.ReadLine();
 
@@ -43,14 +44,16 @@ namespace Program
             {
                 case "1":
                     library.ShowBooks();
-                    Console.WriteLine("Enter ISBN to loan a book:");
+                    Console.WriteLine("Enter ISBN to loan a book");
+                    Console.Write("Input: ");
                     string isbnToLoan = Console.ReadLine();
                     library.LoanBook(isbnToLoan);
                     break;
 
                 case "2":
                     library.ShowBooks();
-                    Console.WriteLine("Enter ISBN to return a book:");
+                    Console.WriteLine("Enter ISBN to return a book");
+                    Console.Write("Input: ");
                     string isbnToReturn = Console.ReadLine();
                     library.ReturnBook(isbnToReturn);
                     break;
